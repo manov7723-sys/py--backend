@@ -1,0 +1,42 @@
+# Build context hygiene — keep images small & reproducible
+.git
+.gitignore
+node_modules
+npm-debug.log*
+yarn-error.log*
+.pnpm-store
+# Python: a developer's virtualenv and caches must never enter the image —
+# `COPY . .` would ship a host-built .venv the container cannot use.
+.venv
+venv
+__pycache__
+*.pyc
+.pytest_cache
+.mypy_cache
+.ruff_cache
+.tox
+dist
+build
+out
+.next
+target
+# C++ build output. A committed build/ carries the developer's CMakeCache.txt,
+# and cmake refuses a cache created for a different directory ("CMakeCache.txt
+# directory ... is different than ...") — the image dies before compiling a
+# line. A host-built binary in there is also the wrong architecture.
+# (build/ and out/ are already excluded above.)
+cmake-build-*
+_deps
+vcpkg_installed
+CMakeCache.txt
+CMakeFiles
+.cache
+coverage
+.env
+.env.*
+*.md
+.vscode
+.idea
+Dockerfile
+docker-compose.yml
+.dockerignore
