@@ -1,0 +1,26 @@
+{
+  "europarl-166_human": {
+    "adequacy": 4.0,
+    "fluency": 4.0
+  },
+  "europarl-122_mistral": {
+    "adequacy": 5.0,
+    "fluency": 4.0
+  },
+  "europarl-57_mistral": {
+    "adequacy": 5.0,
+    "fluency": 3.0
+  },
+  "europarl-157_human": {
+    "adequacy": 5.0,
+    "fluency": 5.0
+  },
+  "europarl-99_human": {
+    "adequacy": 5.0,
+    "fluency": 3.0
+  },
+  "europarl-178_mistral": {
+    "adequacy": 4.0,
+    "fluency": 5.0
+  }
+}
